@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="270" id="KGk-i7-Jjw" customClass="NFFarmTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="270"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="269.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gvl-uu-yQT" userLabel="wrapper">
+                        <rect key="frame" x="15" y="10" width="345" height="249.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="farm_img" translatesAutoresizingMaskIntoConstraints="NO" id="4p5-sJ-HCv">
+                                <rect key="frame" x="0.0" y="0.0" width="345" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="tSF-pP-jkC"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hot" translatesAutoresizingMaskIntoConstraints="NO" id="STF-FN-vtw">
+                                <rect key="frame" x="0.0" y="0.0" width="46" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="9OS-ve-wBG"/>
+                                    <constraint firstAttribute="height" constant="46" id="Um8-fR-SqR"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="farmadd_bg" translatesAutoresizingMaskIntoConstraints="NO" id="JgU-At-0lo">
+                                <rect key="frame" x="0.0" y="125" width="345" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="a7L-W8-wuM"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="farmadd" translatesAutoresizingMaskIntoConstraints="NO" id="jdk-e2-8QT">
+                                <rect key="frame" x="20" y="127" width="17" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="17" id="4Bf-9A-0WF"/>
+                                    <constraint firstAttribute="height" constant="20" id="fpD-Uh-GoF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="绍兴市越城区" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rex-Ic-sLb">
+                                <rect key="frame" x="45" y="125" width="200" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="QVR-eT-Rb8"/>
+                                    <constraint firstAttribute="height" constant="25" id="mbY-Qa-sns"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1.4km" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrj-cp-GAq">
+                                <rect key="frame" x="245" y="127" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天天果园" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Vz-53-DRb">
+                                <rect key="frame" x="20" y="163" width="180" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="CFh-ep-wwQ"/>
+                                    <constraint firstAttribute="width" constant="180" id="IVg-iH-nu2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.29671557310000002" green="1" blue="0.65665079439999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥666" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZF-qf-iRS">
+                                <rect key="frame" x="200" y="160" width="125" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="s8z-FV-dMD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="各种各样的描述，我也不知道写些什么……各种各样的描述，我也不知道写些什么……" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aB-Ru-RU2">
+                                <rect key="frame" x="20" y="199" width="305" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="vOa-1T-agv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WZF-qf-iRS" firstAttribute="top" secondItem="JgU-At-0lo" secondAttribute="bottom" constant="10" id="3fR-1W-QOq"/>
+                            <constraint firstItem="jrj-cp-GAq" firstAttribute="centerY" secondItem="rex-Ic-sLb" secondAttribute="centerY" id="HoC-60-qJk"/>
+                            <constraint firstItem="4p5-sJ-HCv" firstAttribute="leading" secondItem="Gvl-uu-yQT" secondAttribute="leading" id="S2u-0W-QCe"/>
+                            <constraint firstItem="rex-Ic-sLb" firstAttribute="leading" secondItem="jdk-e2-8QT" secondAttribute="trailing" constant="8" id="TqO-Fz-L6Y"/>
+                            <constraint firstItem="STF-FN-vtw" firstAttribute="top" secondItem="Gvl-uu-yQT" secondAttribute="top" id="UGK-Fu-vBT"/>
+                            <constraint firstItem="JgU-At-0lo" firstAttribute="top" secondItem="4p5-sJ-HCv" secondAttribute="bottom" constant="-25" id="XE6-an-FGz"/>
+                            <constraint firstItem="STF-FN-vtw" firstAttribute="leading" secondItem="Gvl-uu-yQT" secondAttribute="leading" id="YZi-hQ-Vhh"/>
+                            <constraint firstItem="4p5-sJ-HCv" firstAttribute="top" secondItem="Gvl-uu-yQT" secondAttribute="top" id="dL6-DB-7dg"/>
+                            <constraint firstItem="JgU-At-0lo" firstAttribute="leading" secondItem="Gvl-uu-yQT" secondAttribute="leading" id="eeN-yD-TKK"/>
+                            <constraint firstAttribute="trailing" secondItem="JgU-At-0lo" secondAttribute="trailing" id="h0b-mm-IPn"/>
+                            <constraint firstItem="2aB-Ru-RU2" firstAttribute="leading" secondItem="Gvl-uu-yQT" secondAttribute="leading" constant="20" id="iXK-Yz-zvF"/>
+                            <constraint firstItem="jrj-cp-GAq" firstAttribute="leading" secondItem="rex-Ic-sLb" secondAttribute="trailing" id="jpE-ow-i4J"/>
+                            <constraint firstAttribute="trailing" secondItem="2aB-Ru-RU2" secondAttribute="trailing" constant="20" id="pSG-k4-kSx"/>
+                            <constraint firstItem="jdk-e2-8QT" firstAttribute="leading" secondItem="Gvl-uu-yQT" secondAttribute="leading" constant="20" id="qT8-dQ-C9M"/>
+                            <constraint firstAttribute="trailing" secondItem="WZF-qf-iRS" secondAttribute="trailing" constant="20" id="qXw-vI-Gtx"/>
+                            <constraint firstItem="rex-Ic-sLb" firstAttribute="bottom" secondItem="JgU-At-0lo" secondAttribute="bottom" id="sJs-NF-FJ5"/>
+                            <constraint firstItem="jdk-e2-8QT" firstAttribute="bottom" secondItem="JgU-At-0lo" secondAttribute="bottom" constant="-3" id="sp0-4R-Fqz"/>
+                            <constraint firstItem="2aB-Ru-RU2" firstAttribute="top" secondItem="5Vz-53-DRb" secondAttribute="bottom" constant="8" id="svb-xK-2d5"/>
+                            <constraint firstItem="5Vz-53-DRb" firstAttribute="top" secondItem="rex-Ic-sLb" secondAttribute="bottom" constant="13" id="tII-6J-M88"/>
+                            <constraint firstItem="5Vz-53-DRb" firstAttribute="leading" secondItem="Gvl-uu-yQT" secondAttribute="leading" constant="20" id="tki-9d-Ty6"/>
+                            <constraint firstAttribute="trailing" secondItem="4p5-sJ-HCv" secondAttribute="trailing" id="xgz-DF-OSy"/>
+                            <constraint firstItem="WZF-qf-iRS" firstAttribute="leading" secondItem="5Vz-53-DRb" secondAttribute="trailing" id="y4f-NM-Gvf"/>
+                            <constraint firstAttribute="trailing" secondItem="jrj-cp-GAq" secondAttribute="trailing" constant="20" id="yQD-wg-uqc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Gvl-uu-yQT" secondAttribute="bottom" constant="10" id="4dY-sO-8lp"/>
+                    <constraint firstAttribute="trailing" secondItem="Gvl-uu-yQT" secondAttribute="trailing" constant="15" id="bBl-sa-XHG"/>
+                    <constraint firstItem="Gvl-uu-yQT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="gmn-Jm-L4K"/>
+                    <constraint firstItem="Gvl-uu-yQT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="p2o-gP-o7g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="rex-Ic-sLb" id="fEZ-sH-4EE"/>
+                <outlet property="discreptionLabel" destination="2aB-Ru-RU2" id="kJT-vT-7KN"/>
+                <outlet property="distanceLabel" destination="jrj-cp-GAq" id="rfW-I9-Lqu"/>
+                <outlet property="farmImageView" destination="4p5-sJ-HCv" id="MuI-On-89I"/>
+                <outlet property="farmNameLabel" destination="5Vz-53-DRb" id="wFT-8w-0HY"/>
+                <outlet property="hotImageView" destination="STF-FN-vtw" id="IcU-h7-ef2"/>
+                <outlet property="priceLabel" destination="WZF-qf-iRS" id="9qa-i5-lK6"/>
+                <outlet property="wrapperView" destination="Gvl-uu-yQT" id="zH1-zg-dZE"/>
+            </connections>
+            <point key="canvasLocation" x="482.5" y="202"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="farm_img" width="345" height="150"/>
+        <image name="farmadd" width="8" height="10"/>
+        <image name="farmadd_bg" width="345" height="25"/>
+        <image name="hot" width="46" height="46"/>
+    </resources>
+</document>

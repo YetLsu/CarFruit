@@ -1,0 +1,48 @@
+//
+//  guonongda.pch
+//  guonongda
+//
+//  Created by guest on 16/8/29.
+//  Copyright © 2016年 聂凡. All rights reserved.
+//
+
+#ifndef guonongda_pch
+#define guonongda_pch
+
+#import <UIKit/UIKit.h>
+#import "AFNetworking.h"
+#import "MJRefresh.h"
+#import "MJExtension.h"
+#import "UIImageView+WebCache.h"
+#import "AppDelegate.h"
+#import "UIColor+NFExtension.h"
+#import "UIViewExt.h"
+
+#import "MBProgressHUD.h"
+#import "NFUtils.h"
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define kBaseColor [UIColor colorWithHexString:@"#31ae9a"]
+#define kBaseBackgroundColor [UIColor colorWithHexString:@"#efefef"]
+#define kPriceColor [UIColor colorWithHexString:@"#c34239"]
+
+
+#define kMapApikey @"c12e642a7196832746f135c88fab236a"
+//短信验证
+#define kMobSMSAppKey @"151e52b48ad5b"
+#define kMobSMSAppSecret @"b071dece8c414f44938979335c50b8df"
+//微信
+#define kWXAppId @"wx7bd9538ff704a12c"
+#define WX_PartnerKey @"qwertyuiopasdfghjklzxcvbnm123456"
+//设置多少米显示底部滴滴打车按钮
+#define kDistance 500
+#define kDiDiAppId @"didi636954614F696F756A6D537353635742"
+#define kDiDiSecret @"a2c046b90d12413a79440f4fe96709fa"
+//设置回调地址
+#define kUrlSchema @"guonongda"
+
+
+
+
+#endif /* guonongda_pch */

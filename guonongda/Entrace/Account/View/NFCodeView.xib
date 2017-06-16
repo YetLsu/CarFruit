@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Ago-4n-zRj" customClass="NFCodeView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="*复制兑换码，前往微信公众号XXX处兑换微信红包" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUE-t1-3QV">
+                    <rect key="frame" x="25" y="55" width="275" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="rLo-th-FrT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fy-Xo-Hif">
+                    <rect key="frame" x="235" y="25" width="50" height="25"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="l85-Ay-jd1"/>
+                        <constraint firstAttribute="width" constant="50" id="x05-h4-ssG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="复制"/>
+                    <connections>
+                        <action selector="copAction:" destination="Ago-4n-zRj" eventType="touchUpInside" id="MDf-ci-0f1"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="240805320909FASDFA32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVM-kp-pNv">
+                    <rect key="frame" x="25" y="25" width="200" height="25"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="2bx-iY-Iwb"/>
+                        <constraint firstAttribute="height" constant="25" id="myJ-GX-yYy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3fy-Xo-Hif" firstAttribute="leading" secondItem="bVM-kp-pNv" secondAttribute="trailing" constant="10" id="2wK-4W-plo"/>
+                <constraint firstItem="bVM-kp-pNv" firstAttribute="top" secondItem="Ago-4n-zRj" secondAttribute="top" constant="25" id="PYD-a6-M2E"/>
+                <constraint firstItem="BUE-t1-3QV" firstAttribute="top" secondItem="bVM-kp-pNv" secondAttribute="bottom" constant="5" id="SK2-jw-pYw"/>
+                <constraint firstAttribute="trailing" secondItem="BUE-t1-3QV" secondAttribute="trailing" constant="25" id="TFc-HL-h4q"/>
+                <constraint firstItem="bVM-kp-pNv" firstAttribute="leading" secondItem="Ago-4n-zRj" secondAttribute="leading" constant="25" id="fsU-Ku-AXI"/>
+                <constraint firstItem="BUE-t1-3QV" firstAttribute="leading" secondItem="Ago-4n-zRj" secondAttribute="leading" constant="25" id="mBe-iJ-j1q"/>
+                <constraint firstItem="3fy-Xo-Hif" firstAttribute="centerY" secondItem="bVM-kp-pNv" secondAttribute="centerY" id="uzq-g3-lSK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="codeConstraint" destination="fsU-Ku-AXI" id="bve-75-rO5"/>
+                <outlet property="codeLabel" destination="bVM-kp-pNv" id="bbO-sB-fnf"/>
+                <outlet property="cpButton" destination="3fy-Xo-Hif" id="fQ5-w2-rFZ"/>
+                <outlet property="cpButtonLeftConstraint" destination="2wK-4W-plo" id="HMo-Zd-cmY"/>
+            </connections>
+            <point key="canvasLocation" x="132.5" y="130"/>
+        </view>
+    </objects>
+</document>

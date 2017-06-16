@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="140" id="KGk-i7-Jjw" customClass="NFGiftCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="109"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="108.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="gift_ticketbg" translatesAutoresizingMaskIntoConstraints="NO" id="uSk-qI-ZqG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="109.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="红包额度：2.0元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1e-39-g3P">
+                        <rect key="frame" x="125" y="44" width="235" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="mnN-RZ-fEZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="激活要求：App内消费一次" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJk-ua-Ph8">
+                        <rect key="frame" x="125" y="19" width="235" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="a0j-i7-icP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥ 2.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNd-sA-nsj">
+                        <rect key="frame" x="0.0" y="0.0" width="110" height="108.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="RFP-x1-Ldd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKs-dZ-1ww">
+                        <rect key="frame" x="315" y="73.5" width="50" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="5rE-bG-a2I"/>
+                            <constraint firstAttribute="height" constant="25" id="KOH-9x-NQt"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="gift_botton2"/>
+                        <connections>
+                            <action selector="exchangeAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9kt-oi-V82"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有效期限：激活后7天" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7e-61-qev">
+                        <rect key="frame" x="125" y="69" width="235" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="l5j-H7-H4K"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="v7e-61-qev" firstAttribute="top" secondItem="x1e-39-g3P" secondAttribute="bottom" constant="5" id="6vZ-gN-LJQ"/>
+                    <constraint firstAttribute="trailing" secondItem="gKs-dZ-1ww" secondAttribute="trailing" constant="10" id="89d-0o-FNG"/>
+                    <constraint firstItem="uSk-qI-ZqG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8NQ-wH-fGt"/>
+                    <constraint firstAttribute="trailing" secondItem="tJk-ua-Ph8" secondAttribute="trailing" constant="15" id="A2n-fL-mFR"/>
+                    <constraint firstAttribute="bottom" secondItem="gKs-dZ-1ww" secondAttribute="bottom" constant="10" id="Afu-Mv-DP3"/>
+                    <constraint firstItem="sNd-sA-nsj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="CYa-Yj-yMt"/>
+                    <constraint firstAttribute="bottom" secondItem="uSk-qI-ZqG" secondAttribute="bottom" id="CZV-lT-PKh"/>
+                    <constraint firstAttribute="trailing" secondItem="x1e-39-g3P" secondAttribute="trailing" constant="15" id="IJQ-bg-oj5"/>
+                    <constraint firstItem="x1e-39-g3P" firstAttribute="centerY" secondItem="sNd-sA-nsj" secondAttribute="centerY" id="JCQ-WG-77j"/>
+                    <constraint firstAttribute="trailing" secondItem="v7e-61-qev" secondAttribute="trailing" constant="15" id="Q9w-mY-0CC"/>
+                    <constraint firstItem="sNd-sA-nsj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="R2y-KC-vCG"/>
+                    <constraint firstItem="x1e-39-g3P" firstAttribute="leading" secondItem="sNd-sA-nsj" secondAttribute="trailing" constant="15" id="cJ2-iV-5dZ"/>
+                    <constraint firstAttribute="bottom" secondItem="sNd-sA-nsj" secondAttribute="bottom" id="e25-LD-Cml"/>
+                    <constraint firstItem="tJk-ua-Ph8" firstAttribute="leading" secondItem="sNd-sA-nsj" secondAttribute="trailing" constant="15" id="jTl-HR-f1v"/>
+                    <constraint firstItem="x1e-39-g3P" firstAttribute="top" secondItem="tJk-ua-Ph8" secondAttribute="bottom" constant="5" id="maO-Fp-9DV"/>
+                    <constraint firstItem="uSk-qI-ZqG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="s6E-Wf-rxj"/>
+                    <constraint firstItem="v7e-61-qev" firstAttribute="leading" secondItem="sNd-sA-nsj" secondAttribute="trailing" constant="15" id="tor-mp-2Gz"/>
+                    <constraint firstAttribute="trailing" secondItem="uSk-qI-ZqG" secondAttribute="trailing" id="xTY-zy-Rcz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftPriceLabel" destination="sNd-sA-nsj" id="Zlk-3u-faF"/>
+                <outlet property="rightPriceLabel" destination="x1e-39-g3P" id="nqY-j7-38Z"/>
+            </connections>
+            <point key="canvasLocation" x="219.5" y="184.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gift_botton2" width="50" height="25"/>
+        <image name="gift_ticketbg" width="345" height="110"/>
+    </resources>
+</document>
